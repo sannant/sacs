@@ -1,5 +1,5 @@
 #
-# Copyright 2021 Lars Pastewka
+# Copyright 2021 Antoine Sanner
 #
 # MIT License
 #
@@ -29,15 +29,15 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name="python-skeleton",
+    name="sacs",
     scripts=[],
     packages=find_packages(),
     package_data={'': ['ChangeLog.md']},
     include_package_data=True,
     # metadata for upload to PyPI
-    author="Lars Pastewka",
-    author_email="lars.pastewka@imtek.uni-freiburg.de",
-    description="Python skeleton project",
+    author="Antoine Sanner",
+    author_email="antoine.pastewka@imtek.uni-freiburg.de",
+    description="Antoine Sanner's code snippets",
     license="MIT",
     test_suite='tests',
     # dependencies
@@ -51,9 +51,5 @@ setup(
         'pytest',
     ],
     install_requires=[
-        'numpy>=1.11.0',
-        'scipy',
-        'NuMPI>=0.1.4',
-        'muFFT>=0.12.0',
     ]
 )
