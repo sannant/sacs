@@ -23,8 +23,7 @@
 #
 
 """
-The entry point for the code
+Code snippets by Antoine Sanner
 """
 
-def hello_world():
-	return "Hello world!"
+from . import matplotlib
