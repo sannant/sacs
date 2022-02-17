@@ -1,7 +1,11 @@
+
+
 paper = {
     "font.family": "Arial Unicode MS",
     "axes.titlesize": "8",
     "axes.labelsize": 8,
+    "axes.xmargin":   0,  # x margin.  See `axes.Axes.margins`
+    "axes.ymargin":  0,  # y margin.  See `axes.Axes.margins`
     "font.size": "8",
     "legend.fontsize": 7,
     "lines.linewidth": "1",
@@ -28,6 +32,8 @@ notebook = {
     "font.family": "Arial Unicode MS",
     "axes.titlesize": "8",
     "axes.labelsize": 8,
+    "axes.xmargin":   0,  # x margin.  See `axes.Axes.margins`
+    "axes.ymargin":  0,  # y margin.  See `axes.Axes.margins`
     "font.size": "8",
     "legend.fontsize": 7,
     "lines.linewidth": "1",
@@ -48,4 +54,26 @@ notebook = {
     "figure.dpi": 200,
     "savefig.dpi": 300,
     "axes.grid": "False",
+    }
+presentation = {
+    "font.family": "Arial Unicode MS",
+    "axes.titlesize": 20,
+    "axes.labelsize": 18,
+    "font.size": 16,
+    "legend.fontsize": 16,
+    "lines.linewidth": 2,
+    "lines.markersize": 10,
+    "xtick.labelsize": 18,
+    "ytick.labelsize": 18,
+    "axes.formatter.limits": (-40, 40),
+    "axes.formatter.useoffset": False,
+    "figure.subplot.left": 0.2,
+    "figure.subplot.right": 0.9,
+    "figure.subplot.bottom": 0.11,
+    "figure.subplot.top": 0.88,
+    "figure.subplot.wspace": 0.3,
+    "figure.subplot.hspace": 0.2,
+    "figure.dpi": 200,
+    "savefig.dpi": 300,
+    "axes.grid": False
     }
