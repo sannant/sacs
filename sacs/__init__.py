@@ -27,3 +27,4 @@ Code snippets by Antoine Sanner
 """
 
 from . import matplotlib
+from . import statistics
