@@ -1,11 +1,16 @@
+from cycler import cycler
 
+from .colors import bright
+
+default_color_cycler = cycler('color', [bright[key] for key in
+                                        ("blue", "red", "green", "yellow", "cyan", "purple", "grey")])
 
 paper = {
     "font.family": "Arial Unicode MS",
     "axes.titlesize": "8",
     "axes.labelsize": 8,
-    "axes.xmargin":   0,  # x margin.  See `axes.Axes.margins`
-    "axes.ymargin":  0,  # y margin.  See `axes.Axes.margins`
+    "axes.xmargin": 0,  # x margin.  See `axes.Axes.margins`
+    "axes.ymargin": 0,  # y margin.  See `axes.Axes.margins`
     "font.size": "8",
     "legend.fontsize": 7,
     "lines.linewidth": "1",
@@ -26,6 +31,7 @@ paper = {
     "figure.dpi": 300,
     "savefig.dpi": 300,
     "axes.grid": "False",
+    "axes.prop_cycle": default_color_cycler
     }
 
 notebook = {
@@ -54,6 +60,7 @@ notebook = {
     "figure.dpi": 200,
     "savefig.dpi": 300,
     "axes.grid": "False",
+    "axes.prop_cycle": default_color_cycler
     }
 presentation = {
     "font.family": "Arial Unicode MS",
@@ -75,5 +82,6 @@ presentation = {
     "figure.subplot.hspace": 0.2,
     "figure.dpi": 200,
     "savefig.dpi": 300,
-    "axes.grid": False
+    "axes.grid": False,
+    "axes.prop_cycle": default_color_cycler
     }

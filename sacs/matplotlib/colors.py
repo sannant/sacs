@@ -13,10 +13,20 @@ Some of my custom colormaps, norms etc...
 
 # High contrast color scheme
 high_contrast = dict(
-yellow="#DDAA33",
-blue="#004488",
-red="#BB5566",
+    yellow="#DDAA33",
+    blue="#004488",
+    red="#BB5566",
 )
+
+# High contrast color scheme
+medium_contrast = {
+    "ligh yellow": "#EECC66",
+    "light red": "#EE99AA",
+    "light blue": "#6699CC",
+    "dark yellow": "#997700",
+    "dark red": "#994455",
+    "dark blue": "#004488",
+    }
 
 # Muted color scheme
 muted = dict(
