@@ -49,6 +49,15 @@ bright = dict(
     purple="#AA3377",
     grey="#BBBBBB",
     )
+#
+# To use in Latex:
+#\definecolor{tol-bright-blue}{HTML}{4477AA}
+#\definecolor{tol-bright-cyan}{HTML}{66CCEE}
+#\definecolor{tol-bright-green}{HTML}{228833}
+#\definecolor{tol-bright-yellow}{HTML}{CCBB44}
+#\definecolor{tol-bright-red}{HTML}{EE6677}
+#\definecolor{tol-bright-purple}{HTML}{AA3377}
+#\definecolor{tol-bright-grey}{HTML}{BBBBBB}
 
 # Diverging colour schemes
 sunset =  ['#364B9A', '#4A7BB7', '#6EA6CD', '#98CAE1', '#C2E4EF', '#EAECCC', '#FEDA8B', '#FDB366', '#F67E4B', '#DD3D2D', '#A50026']
