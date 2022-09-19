@@ -14,7 +14,7 @@ class MidpointNormalize(mpl.colors.Normalize):
         normalized_max = min(1, 1 / 2 * (1 + abs((self.vmax - self.midpoint) / (self.midpoint - self.vmin))))
         normalized_mid = 0.5
         x, y = [self.vmin, self.midpoint, self.vmax], [normalized_min, normalized_mid, normalized_max]
-        return sp.ma.masked_array(sp.interp(value, x, y))
+        return np.ma.masked_array(sp.interp(value, x, y))
 
     def inverse(self, value):
         normalized_min = max(0, 1 / 2 * (1 - abs((self.midpoint - self.vmin) / (self.midpoint - self.vmax))))
