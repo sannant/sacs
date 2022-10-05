@@ -1,5 +1,5 @@
 #
-# Copyright 2021 Lars Pastewka
+# Copyright 2022 Antoine Sanner
 #
 # MIT License
 #
@@ -28,3 +28,4 @@ Code snippets by Antoine Sanner
 
 from . import matplotlib
 from . import statistics
+from . import dtool
