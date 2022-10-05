@@ -31,13 +31,18 @@ medium_contrast = {
 # Muted color scheme
 muted = dict(
     indigo="#332288",
+    cyan="88CCEE",
+    teal="#44AA99",
     green="#117733",
     olive="#999933",
-    purple="#AA4499",
     sand="#DDCC77",
+    rose="#CC6677",
     wine="#882255",
-    teal="#44AA99",
+    purple="#AA4499",
     )
+
+muted_dict = muted
+muted_default_order = ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#999933', '#AA4499']
 
 # Bright color scheme:
 bright = dict(
