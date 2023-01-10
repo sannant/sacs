@@ -29,3 +29,4 @@ Code snippets by Antoine Sanner
 from . import matplotlib
 from . import statistics
 from . import dtool
+from . import utilities
