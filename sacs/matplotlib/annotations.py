@@ -28,8 +28,8 @@ def arrow(ax, start, end=None, delta=None, arrowprops={}, label=None,
         ye = ys + asscalar(delta[1])
     else:
         raise AssertionError('Missing Argument end or delta')
-
-    ax.add_artist(FancyArrowPatch((xs, ys), (xe, ye), **arrow_prop_dict))
+    artist = FancyArrowPatch((xs, ys), (xe, ye), **arrow_prop_dict)
+    ax.add_artist(artist)
     if label is not None:
         ox, oy = labeloffset
         if labelpos == "end":
@@ -38,3 +38,4 @@ def arrow(ax, start, end=None, delta=None, arrowprops={}, label=None,
             ax.text(xs + ox, ys + oy, label, **textprops)
         elif labelpos == "center":
             ax.text((xe + xs) / 2 + ox, (ye + ys) / 2 + oy, label, **textprops)
+    return artist
