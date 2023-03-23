@@ -1,3 +1,3 @@
-# Skeleton
+# My code snippets
 
-Skeleton for numerical projects with Python. This skeleton uses [numpy](https://numpy.org/) and [pytest](https://pytest.org). Rename the `python_skeleton` subdirectory to your module name.
+Inlcudes utilities for using dtool and style specifications for matplotlib
