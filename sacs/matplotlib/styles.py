@@ -1,5 +1,4 @@
 from cycler import cycler
-
 from .colors import bright
 
 default_color_cycler = cycler('color', [bright[key] for key in
@@ -7,15 +6,21 @@ default_color_cycler = cycler('color', [bright[key] for key in
 
 mm2inch = 1 / 25.4
 
+from sys import platform
+if platform == "darwin":
+    arial = "Arial Unicode MS"
+else:
+    arial = "Arial"
+
 base_style = {
-    "font.family": "Arial Unicode MS",
+    "font.family": arial,
     "axes.grid": "False",
     "axes.prop_cycle": default_color_cycler
 }
-paper = {
-    "font.family": "Arial Unicode MS",
-    "axes.grid": "False",
-    "axes.prop_cycle": default_color_cycler,
+
+
+paper = base_style.copy()
+paper.update({
     "axes.titlesize": "8",
     "axes.labelsize": 8,
     "axes.xmargin": 0,  # x margin.  See `axes.Axes.margins`
@@ -39,14 +44,12 @@ paper = {
     ## expressed as a fraction of the average axis height
     "figure.dpi": 300,
     "savefig.dpi": 300,
-    }
+    })
 
 
 # font sizes are 5 to 7pt. except the a,b, c panel names that are 8 and bold
-paper_nature = {
-    "font.family": "Arial Unicode MS",
-    "axes.grid": "False",
-    "axes.prop_cycle": default_color_cycler,
+paper_nature = base_style.copy()
+paper_nature.update({
     "axes.titlesize": "7",
     "axes.labelsize": 7,
     "axes.xmargin": 0,  # x margin.  See `axes.Axes.margins`
@@ -70,13 +73,10 @@ paper_nature = {
     ## expressed as a fraction of the average axis height
     "figure.dpi": 300,
     "savefig.dpi": 300,
-    }
+    })
 
-
-thesis = {
-    "font.family": "Arial Unicode MS",
-    "axes.grid": "False",
-    "axes.prop_cycle": default_color_cycler,
+thesis = base_style.copy()
+thesis.update({
     "axes.titlesize": "10",
     "axes.labelsize": 10,
     "axes.xmargin": 0,  # x margin.  See `axes.Axes.margins`
@@ -100,14 +100,11 @@ thesis = {
     ## expressed as a fraction of the average axis height
     "figure.dpi": 300,
     "savefig.dpi": 300,
-    }
+    })
 
 
-
-notebook = {
-    "font.family": "Arial Unicode MS",
-    "axes.grid": "False",
-    "axes.prop_cycle": default_color_cycler,
+notebook = base_style.copy()
+notebook.update({
     "axes.titlesize": "8",
     "axes.labelsize": 8,
     "axes.xmargin":   0,  # x margin.  See `axes.Axes.margins`
@@ -131,11 +128,9 @@ notebook = {
     ## expressed as a fraction of the average axis height
     "figure.dpi": 200,
     "savefig.dpi": 300,
-    }
-presentation = {
-    "font.family": "Arial Unicode MS",
-    "axes.grid": "False",
-    "axes.prop_cycle": default_color_cycler,
+    })
+presentation = base_style.copy()
+presentation.update({
     "axes.titlesize": 20,
     "axes.labelsize": 18,
     "axes.linewidth": 2,
@@ -156,4 +151,4 @@ presentation = {
     "figure.subplot.hspace": 0.2,
     "figure.dpi": 200,
     "savefig.dpi": 300,
-    }
+    })
