@@ -134,6 +134,8 @@ presentation.update({
     "axes.titlesize": 20,
     "axes.labelsize": 18,
     "axes.linewidth": 2,
+    "axes.xmargin": 0,  # x margin.  See `axes.Axes.margins`
+    "axes.ymargin": 0,  # y margin.  See `axes.Axes.margins`
     "font.size": 16,
     "legend.fontsize": 16,
     "lines.linewidth": 2,
