@@ -8,3 +8,7 @@ def select_parameters(df, fixed_parameters):
         except AttributeError:
             selection &= df[k] == v
     return selection
+
+def filter_parameters(df, fixed_parameters):
+    selection = select_parameters(df, fixed_parameters)
+    return df[selection]
